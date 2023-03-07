@@ -1,0 +1,24 @@
+/*Multiple*/
+input,
+button,
+textarea {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+}
+input {
+  padding: 5px;
+}
+
+label {
+  display: block;
+}
+button {
+  display: block;
+  padding: 5px 0;
+  cursor: pointer;
+}
+textarea {
+  padding: 10px;
+  resize: none;
+  height: 100px;
+}

@@ -1,0 +1,13 @@
+html {
+  font-size: 62.5%;
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+}

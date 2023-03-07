@@ -1,0 +1,17 @@
+/*Uncontrolled*/
+p {
+  margin: 0;
+}
+form {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+  margin: 30px;
+  margin-top: 70px;
+}
+input,
+button {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+}
