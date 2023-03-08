@@ -1,42 +1,42 @@
 import { useForm } from "react-hook-form";
+import "./style.css";
 
-function MyForm() {
-  const { register, handleSubmit } = useForm();
+function LoginForm() {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
 
-  const onSubmit = (data) => console.log(data);
+  const onSubmit = (data) => {
+    console.log(data);
+  };
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)}>
-      <input type="text" name="fullName" {...register("fullName")} />
-      {/* <select name="fruits" {...register("fruits")}>
-        <option value="mango">Mango</option>
-        <option value="orange">Orange</option>
-        <option value="pawpaw">Pawpaw</option>
-      </select>
+    <form onSubmit={handleSubmit(onSubmit)} className="hook">
+      <label className="hook__text">Email</label>
+      <input
+        type="email"
+        className="hook__input"
+        {...register("email", { required: true, pattern: /^\S+@\S+$/i })}
+      />
+      {errors.email && (
+        <p className="hook__error">Email is required and must be valid</p>
+      )}
 
-      <label htmlFor="vehicle1">
-        <input
-          type="checkbox"
-          id="vehicle1"
-          name="vehicle1"
-          value="Bike"
-          {...register("vehicle1")}
-        />
-        I Bike
-      </label>
-      <label htmlFor="vehicle2">
-        <input
-          type="checkbox"
-          id="vehicle2"
-          name="vehicle2"
-          value="Benz"
-          {...register("vehicle2")}
-        />
-        Benz
-      </label> */}
-      <button type="submit">Submit</button>
+      <label className="hook__text">Password</label>
+      <input
+        type="password"
+        className="hook__input"
+        {...register("password", { required: true })}
+      />
+      {errors.password && <p className="hook__error">Password is required</p>}
+
+      <button className="hook__button" type="submit">
+        Submit
+      </button>
     </form>
   );
 }
 
-export default MyForm;
+export default LoginForm;
