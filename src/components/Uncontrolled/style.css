@@ -1,17 +1,16 @@
-/*Uncontrolled*/
-p {
-  margin: 0;
-}
-form {
+.uncontrolled {
   display: flex;
-  align-items: flex-start;
   flex-direction: column;
-  gap: 20px;
-  margin: 30px;
-  margin-top: 70px;
+  align-items: flex-start;
+  gap: 2rem;
 }
-input,
-button {
+.uncontrolled__button {
   font-family: "Poppins", sans-serif;
-  font-size: 18px;
+  font-size: 1.8rem;
+  padding: 5px 10px;
+}
+.uncontrolled__checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }

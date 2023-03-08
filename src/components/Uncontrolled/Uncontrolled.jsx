@@ -1,4 +1,5 @@
-import React, { useRef } from "react";
+import { useRef } from "react";
+import "./style.css";
 
 export default function Uncontrolled() {
   const selectRef = useRef(null);
@@ -13,7 +14,7 @@ export default function Uncontrolled() {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form className="uncontrolled" onSubmit={handleSubmit}>
       <label>
         <p>Name:</p>
         <input ref={inputRef} type="text" />
@@ -26,11 +27,13 @@ export default function Uncontrolled() {
           <option value="blue">Blue</option>
         </select>
       </label>
-      <label>
+      <label className="uncontrolled__checkbox">
         Do you like React?
         <input type="checkbox" ref={checkboxRef} />
       </label>
-      <button type="submit">Submit</button>
+      <button className="uncontrolled__button" type="submit">
+        Submit
+      </button>
     </form>
   );
 }

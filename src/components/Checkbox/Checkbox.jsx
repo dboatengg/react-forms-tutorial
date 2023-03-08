@@ -1,29 +1,5 @@
-// import React, { useState } from "react";
-
-// export default function Checkbox() {
-//   const [selectedColor, setSelectedColor] = useState("");
-
-//   const handleCheckboxChange = (event) => {
-//     const color = event.target.checked ? "red" : "";
-//     setSelectedColor(color);
-//   };
-
-//   return (
-//     <form>
-//       <label>
-//         <input
-//           type="checkbox"
-//           checked={selectedColor === "red"}
-//           onChange={handleCheckboxChange}
-//         />
-//         Red
-//       </label>
-//       <div>Selected color: {selectedColor}</div>
-//     </form>
-//   );
-// }
-
 import React, { useState } from "react";
+import "./style.css";
 
 function Checkbox() {
   const [selectedColor, setSelectedColor] = useState({
@@ -37,8 +13,8 @@ function Checkbox() {
   };
 
   return (
-    <div>
-      <label htmlFor="blue">
+    <form>
+      <label className="checkbox__text" htmlFor="blue">
         <input
           type="checkbox"
           name="blue"
@@ -47,8 +23,8 @@ function Checkbox() {
         />
         Blue
       </label>
-      <br />
-      <label htmlFor="red">
+
+      <label className="checkbox__text" htmlFor="red">
         <input
           type="checkbox"
           name="red"
@@ -64,7 +40,7 @@ function Checkbox() {
         .map((key) => (
           <div key={key}>{key}</div>
         ))}
-    </div>
+    </form>
   );
 }
 

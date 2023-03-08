@@ -9,12 +9,12 @@ import ReactHook from "./components/ReackHookForm/Example";
 const App = () => {
   return (
     <div>
-      {/* <Validate /> */}
+      {/* <Controlled /> */}
       {/* <Dropdown /> */}
       {/* <Checkbox /> */}
       {/* <Multiple /> */}
-      {/* <Uncontrolled /> */}
-      {/* <Controlled /> */}
+      {/* <Validate /> */}
+      <Uncontrolled />
       {/* <ReactHook /> */}
     </div>
   );

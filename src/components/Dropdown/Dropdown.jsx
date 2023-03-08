@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./style.css";
 
 export default function Dropdown() {
   const [selectedOption, setSelectedOption] = useState("option1");
@@ -17,7 +18,7 @@ export default function Dropdown() {
           <option value="option3">Option 3</option>
         </select>
       </label>
-      <p className="selected">Selected option: {selectedOption}</p>
+      <p className="dropdown__selected">Selected option: {selectedOption}</p>
     </form>
   );
 }
