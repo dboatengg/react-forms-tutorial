@@ -1,5 +1,3 @@
-.checkbox__text {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
+.checkbox__input {
+  margin-bottom: 30px;
 }

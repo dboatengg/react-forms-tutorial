@@ -1,45 +1,26 @@
-import React, { useState } from "react";
-import "./style.css";
+import { useState } from "react";
 
 function Checkbox() {
-  const [selectedColor, setSelectedColor] = useState({
-    blue: false,
-    red: false,
-  });
+  const [isChecked, setIsChecked] = useState(false);
 
   const handleChange = (event) => {
-    const { name, checked } = event.target;
-    setSelectedColor((prevState) => ({ ...prevState, [name]: checked }));
+    setIsChecked(event.target.checked);
   };
 
   return (
     <form>
-      <label className="checkbox__text" htmlFor="blue">
+      <label htmlFor="color" className="checkbox__text">
         <input
+          className="checkbox__input"
           type="checkbox"
-          name="blue"
-          checked={selectedColor.blue}
+          name="color"
+          checked={isChecked}
           onChange={handleChange}
         />
         Blue
       </label>
 
-      <label className="checkbox__text" htmlFor="red">
-        <input
-          type="checkbox"
-          name="red"
-          checked={selectedColor.red}
-          onChange={handleChange}
-        />
-        Red
-      </label>
-
-      <p>Selected color(s):</p>
-      {Object.keys(selectedColor)
-        .filter((key) => selectedColor[key])
-        .map((key) => (
-          <div key={key}>{key}</div>
-        ))}
+      {isChecked && <div>Blue is selected!</div>}
     </form>
   );
 }
