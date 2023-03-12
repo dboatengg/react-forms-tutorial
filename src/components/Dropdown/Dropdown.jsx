@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./style.css";
+import "./dropdown.css";
 
 export default function Dropdown() {
   const [selectedOption, setSelectedOption] = useState("option1");

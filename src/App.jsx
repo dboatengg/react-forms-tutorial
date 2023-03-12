@@ -11,11 +11,11 @@ const App = () => {
     <div>
       {/* <Controlled /> */}
       {/* <Dropdown /> */}
-      <Checkbox />
+      {/* <Checkbox /> */}
       {/* <Multiple /> */}
       {/* <Validate /> */}
       {/* <Uncontrolled /> */}
-      {/* <ReactHookForm /> */}
+      <ReactHookForm />
     </div>
   );
 };

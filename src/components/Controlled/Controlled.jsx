@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./style.css";
+import "./controlled.css";
 
 export default function ControlledComponent() {
   const [inputValue, setInputValue] = useState("");

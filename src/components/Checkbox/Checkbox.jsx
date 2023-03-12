@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./checkbox.css";
 
 function Checkbox() {
   const [isChecked, setIsChecked] = useState(false);

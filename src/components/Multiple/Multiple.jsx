@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./style.css";
+import "./multiple.css";
 
 export default function Multiple() {
   const [formData, setFormData] = useState({

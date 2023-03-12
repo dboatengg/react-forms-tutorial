@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import "./style.css";
+import "./uncontrolled.css";
 
 export default function Uncontrolled() {
   const selectRef = useRef(null);
