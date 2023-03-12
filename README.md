@@ -4,7 +4,7 @@ The purpose of this article is to provide a comprehensive and in-depth look at c
 
 ## Demo
 
-Read the tutorial [here](https://ljaisodf).
+Read the tutorial [here](https://www.freecodecamp.org/news/how-to-build-forms-in-react/).
 
 ## Table of Contents
 
